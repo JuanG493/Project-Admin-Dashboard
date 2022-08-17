@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Langar&family=Permanent+Marker&family=Red+Hat+Text:ital,wght@0,300;0,400;1,300&display=swap');
+
+$p9:#581c87;
+$p8:#6b21a8;
+$p7:#7e22ce;
+$p6:#9333ea;
+$p5:#a855f7;
+$p4:#c084fc;
+$p3:#d8b4fe;
+$p2:#e9d5ff;
+$p1:#f3e8ff;
+$p1-2:#faf5ff;
+$p2-shadow: #e9d5ff6f;
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Red Hat Text', sans-serif;
+}
+
+h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      margin: 0 0 5px 0;
+    }
+
+
+@mixin media-sm {
+  @media (max-width: 600px) {
+    @content;
+  }
+}
