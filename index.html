@@ -19,11 +19,11 @@
     <div class="container">
 
         <div class="sidebar">
-            <div class="sidebar__dashboard">
-                <span class="material-symbols-outlined">dashboard</span>
+            <div class="sidebar__dashboard ">
+                <button id="dashboard" class="material-symbols-outlined">dashboard</button>
                 <p>Dashboard</p>
             </div>
-            <div class="sidebar__icons">
+            <div  class="sidebar__icons">
 
                 <div><span class="material-symbols-outlined">other_houses</span>
                     <p>Home</p>
@@ -62,12 +62,12 @@
             <input type="search">
             <span id="search-icon" class="material-symbols-outlined">manage_search</span>
             <span class="material-symbols-outlined">notifications_active</span>
-            <img  src="./img/moca.jpg" alt="dog">
+            <img src="./img/moca.jpg" alt="dog">
             <h4>Mocca</h4>
 
         </div>
         <div class="user">
-            <img  id="user-img" src="./img/moca.jpg" alt="dog" width="100" height="100">
+            <img id="user-img" src="./img/moca.jpg" alt="dog" width="100" height="100">
             <div class="user__greatings">
                 <h6>Hi there,</h6>
                 <h5>Mocca (@thedog)</h3>
@@ -183,28 +183,28 @@
             <div class="trending">
                 <h2 class="project__title">Trending</h2>
                 <div class="user">
-                    <img src="./img/moca.jpg" alt="dog" width="100" height="100">
+                    <img src="img/moca.jpg" alt="dog" width="100" height="100">
                     <div>
                         <a href="https://en.wikipedia.org/wiki/Catalan_Sheepdog">@Mocca</a>
                         <h6>the dog proyect</h6>
                     </div>
                 </div>
                 <div class="user">
-                    <img src="./img/aleman.jpg" alt="dog" width="100" height="100">
+                    <img src="img/aleman.jpg" alt="dog" width="100" height="100">
                     <div>
                         <a href="https://en.wikipedia.org/wiki/German_Shepherd">@German</a>
                         <h6>the dog proyect</h6>
                     </div>
                 </div>
                 <div class="user">
-                    <img src="./img/autralian.jpg" alt="dog" width="100" height="100">
+                    <img src="img/autralian.jpg" alt="dog" width="100" height="100">
                     <div>
                         <a href="https://en.wikipedia.org/wiki/Australian_Shepherd">@Australian</a>
                         <h6>the dog proyect</h6>
                     </div>
                 </div>
                 <div class="user">
-                    <img src="./img/beagle.jpg" alt="dog" width="100" height="100">
+                    <img src="img/beagle.jpg" alt="dog" width="100" height="100">
                     <div>
                         <a href="https://en.wikipedia.org/wiki/Beagle">@Beagle</a>
                         <h6>the dog proyect</h6>
@@ -219,6 +219,20 @@
 
 
     </div>
+
+    <script>
+        const bttdash = document.querySelector("#dashboard");
+        const sideBarIcons = document.querySelector('.sidebar__icons');
+
+        function changeClass(target){
+            sideBarIcons.classList.toggle("active");
+            
+        }
+
+        bttdash.addEventListener("click", changeClass);
+
+
+    </script>
 
 
 
