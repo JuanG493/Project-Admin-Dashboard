@@ -1,17 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Bangers&family=Langar&family=Permanent+Marker&family=Red+Hat+Text:ital,wght@0,300;0,400;1,300&display=swap');
 
-$p9:#581c87;
-$p8:#6b21a8;
-$p7:#7e22ce;
-$p6:#9333ea;
-$p5:#a855f7;
-$p4:#c084fc;
-$p3:#d8b4fe;
-$p2:#e9d5ff;
-$p1:#f3e8ff;
-$p1-2:#faf5ff;
+$p9: #581c87;
+$p8: #6b21a8;
+$p7: #7e22ce;
+$p6: #9333ea;
+$p5: #a855f7;
+$p4: #c084fc;
+$p3: #d8b4fe;
+$p2: #e9d5ff;
+$p1: #f3e8ff;
+$p1-2: #faf5ff;
 $p2-shadow: #e9d5ff6f;
-
+$side-bar-background: #1992d4;
+$action-background: #1992d4;
+$cards-border-left: #f0b429;
+$main-background: #e2e8f0;
+$color-text: #ffffff;
+$color-card: #ffffff;
+$line-color: #ececec;
+$desktop-screeen-tablet: 48rem;
 
 * {
   margin: 0;
@@ -21,17 +28,10 @@ $p2-shadow: #e9d5ff6f;
 }
 
 h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-      margin: 0 0 5px 0;
-    }
-
-
-@mixin media-sm {
-  @media (max-width: 600px) {
-    @content;
-  }
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 0 5px 0;
 }

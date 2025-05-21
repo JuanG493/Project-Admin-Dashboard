@@ -5,237 +5,209 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/main.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <title>Dashboard</title>
-
-
-
 </head>
 
 <body>
-    <div class="container">
+    <div class="cmp-dashboard">
 
-        <div class="sidebar">
-            <div class="sidebar__dashboard ">
+        <div class="cmp-dashboard__sidebar">
+            <div class="cmp-dashboard__sidebar-title">
                 <button id="dashboard" class="material-symbols-outlined">dashboard</button>
-                <p>Dashboard</p>
+                <span>Dashboard</span>
             </div>
-            <div  class="sidebar__icons">
+            <ul class="cmp-dashboard__sidebar-pages">
+                <li>
+                    <span class="material-symbols-outlined">other_houses</span>
+                    <span>Home</span>
+                </li>
+                <li>
+                    <span class="material-symbols-outlined">account_box</span>
+                    <span>Profile</span>
+                </li>
+                <li>
+                    <span class="material-symbols-outlined">chat_bubble</span>
+                    <span>Messages</span>
+                </li>
+                <li>
+                    <span class="material-symbols-outlined">history</span>
+                    <span>History</spa>
+                </li>
+                <li>
+                    <span class="material-symbols-outlined">task</span>
+                    <span>Tasks</span>
+                </li>
+                <li>
+                    <span class="material-symbols-outlined">groups_3</span>
+                    <span>Comunities</span>
+                </li>
 
-                <div><span class="material-symbols-outlined">other_houses</span>
-                    <p>Home</p>
-                </div>
-                <div><span class="material-symbols-outlined">account_box</span>
-                    <p>Profile</p>
-                </div>
-                <div><span class="material-symbols-outlined">chat_bubble</span>
-                    <p>Messages</p>
-                </div>
-                <div><span class="material-symbols-outlined">history</span>
-                    <p>History</p>
-                </div>
-                <div><span class="material-symbols-outlined">task</span>
-                    <p>Tasks</p>
-                </div>
-                <div><span class="material-symbols-outlined">groups_3</span>
-                    <p>Comunities</p>
-                </div>
+                <ul class="sidebar-pages__settings">
+                    <li><span class="material-symbols-outlined">settings</span>
+                        <span>Settings</span>
+                    </li>
+                    <li><span class="material-symbols-outlined">contact_support</span>
+                        <span>Support</span>
+                    </li>
+                    <li><span class="material-symbols-outlined">verified_user</span>
+                        <span>Privacy</span>
+                    </li>
+                </ul>
+            </ul>
+        </div>
 
-                <div class="sidebar__settings">
-                    <div><span class="material-symbols-outlined">settings</span>
-                        <p>Setting</p>
-                    </div>
-                    <div><span class="material-symbols-outlined">contact_support</span>
-                        <p>Support</p>
-                    </div>
-                    <div><span class="material-symbols-outlined">verified_user</span>
-                        <p>Privacy</p>
-                    </div>
+        <div class="cmp-dashboard__banner">
+
+            <div class="cmp-dashboard__banner-search">
+                <span class="material-symbols-outlined">manage_search</span>
+                <input type="search">
+                <div class="banner-search__info">
+                    <span class="material-symbols-outlined">notifications_active</span>
+                    <img id="user-img" src="./img/moca.jpg" alt="dog">
+                    <h4>Mocca</h4>
+                </div>
+            </div>
+
+            <div class="cmp-dashboard__banner-user">
+                <img id="user-img" src="./img/moca.jpg" alt="dog" width="100" height="100">
+                <div class="banner-user__info">
+                    <h6>Hi there,</h6>
+                    <h5>Mocca (@thedog)</h3>
+                </div>
+                <div class="banner-user__actions">
+                    <button>New</button>
+                    <button>Upload</button>
+                    <button>Share</button>
                 </div>
             </div>
         </div>
 
-        <div class="search">
-            <input type="search">
-            <span id="search-icon" class="material-symbols-outlined">manage_search</span>
-            <span class="material-symbols-outlined">notifications_active</span>
-            <img src="./img/moca.jpg" alt="dog">
-            <h4>Mocca</h4>
-
-        </div>
-        <div class="user">
-            <img id="user-img" src="./img/moca.jpg" alt="dog" width="100" height="100">
-            <div class="user__greatings">
-                <h6>Hi there,</h6>
-                <h5>Mocca (@thedog)</h3>
-            </div>
-            <div class="user__buttons">
-                <button>new</button>
-                <button>upload</button>
-                <button>share</button>
-            </div>
-        </div>
-
-        <div class="main">
-
-            <div class="projects">
-                <h2 class="project__title">Your projects</h2>
-
-
-                <div class="proyect">
-                    <p class="title">The dog proyect</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
-                    <div class="project__icons">
-                        <span class="material-symbols-outlined">star_half</span>
-                        <span class="material-symbols-outlined">visibility</span>
-                        <span class="material-symbols-outlined">share</span>
+        <div class="cmp-dashboard__main">
+            <div class="cmp-dashboard__main-projects ">
+                <h2 class="main-projects__title">Your projects</h2>
+                <div class="main-projects__cards">
+                    <div class="main-projects__cards-card">
+                        <h3>The dog proyect</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            .</p>
+                        <div class="cards-card__actions">
+                            <span class="material-symbols-outlined">star_half</span>
+                            <span class="material-symbols-outlined">visibility</span>
+                            <span class="material-symbols-outlined">share</span>
+                        </div>
                     </div>
-                </div>
 
-                <div class="proyect">
-                    <p class="title">The dog proyect</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
-                    <div class="project__icons">
-                        <span class="material-symbols-outlined">star_half</span>
-                        <span class="material-symbols-outlined">visibility</span>
-                        <span class="material-symbols-outlined">share</span>
+                    <div class="main-projects__cards-card">
+                        <h3>The dog proyect</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
+                        <div class="cards-card__actions">
+                            <span class="material-symbols-outlined">star_half</span>
+                            <span class="material-symbols-outlined">visibility</span>
+                            <span class="material-symbols-outlined">share</span>
+                        </div>
                     </div>
-                </div>
-
-                <div class="proyect">
-                    <p class="title">The dog proyect</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
-                    <div class="project__icons">
-                        <span class="material-symbols-outlined">star_half</span>
-                        <span class="material-symbols-outlined">visibility</span>
-                        <span class="material-symbols-outlined">share</span>
+                    <div class="main-projects__cards-card">
+                        <h3>The dog proyect</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
+                        <div class="cards-card__actions">
+                            <span class="material-symbols-outlined">star_half</span>
+                            <span class="material-symbols-outlined">visibility</span>
+                            <span class="material-symbols-outlined">share</span>
+                        </div>
                     </div>
-                </div>
-
-                <div class="proyect">
-                    <p class="title">The dog proyect</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
-                    <div class="project__icons">
-                        <span class="material-symbols-outlined">star_half</span>
-                        <span class="material-symbols-outlined">visibility</span>
-                        <span class="material-symbols-outlined">share</span>
+                    <div class="main-projects__cards-card">
+                        <h3>The dog proyect</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
+                        <div class="cards-card__actions">
+                            <span class="material-symbols-outlined">star_half</span>
+                            <span class="material-symbols-outlined">visibility</span>
+                            <span class="material-symbols-outlined">share</span>
+                        </div>
                     </div>
-                </div>
-
-                <div class="proyect">
-                    <p class="title">The dog proyect</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
-                    <div class="project__icons">
-                        <span class="material-symbols-outlined">star_half</span>
-                        <span class="material-symbols-outlined">visibility</span>
-                        <span class="material-symbols-outlined">share</span>
+                    <div class="main-projects__cards-card">
+                        <h3>The dog proyect</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
+                        <div class="cards-card__actions">
+                            <span class="material-symbols-outlined">star_half</span>
+                            <span class="material-symbols-outlined">visibility</span>
+                            <span class="material-symbols-outlined">share</span>
+                        </div>
                     </div>
-                </div>
-
-                <div class="proyect">
-                    <p class="title">The dog proyect</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
-                    <div class="project__icons">
-                        <span class="material-symbols-outlined">star_half</span>
-                        <span class="material-symbols-outlined">visibility</span>
-                        <span class="material-symbols-outlined">share</span>
+                    <div class="main-projects__cards-card">
+                        <h3>The dog proyect</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
+                        <div class="cards-card__actions">
+                            <span class="material-symbols-outlined">star_half</span>
+                            <span class="material-symbols-outlined">visibility</span>
+                            <span class="material-symbols-outlined">share</span>
+                        </div>
                     </div>
-                </div>
 
+                </div>
             </div>
 
 
-            <div class="announcements">
-                <h2 class="project__title">Announcements</h2>
-                <div class="announce">
-                    <p class="title"></p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa beatae omnis rerum molestias
-                        amet quam hic nostrum tempore, illum neque nesciunt laudantium? Minima saepe earum laboriosam
-                        labore
-                        officiis. Laboriosam, sed?</p>
+            <div class="cmp-dashboard__main-announcements">
+                <h2 class="main-announcements__title">Announcements</h2>
+                <div class="main-announcements__container">
+                    <div class="main-announcements__container-announcement">
+                        <h3>Site Maintenance</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                    </div>
+                    <div class="main-announcements__container-announcement">
+                        <h3>Community Share Day</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                    </div>
+                    <div class="main-announcements__container-announcement">
+                        <h3>Updated Privacy Policy</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                    </div>
                 </div>
-                <div class="announce">
-                    <p class="title"></p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa beatae omnis rerum molestias
-                        amet quam hic nostrum tempore, illum neque nesciunt laudantium? Minima saepe earum laboriosam
-                        labore
-                        officiis. Laboriosam, sed?</p>
-                </div>
-                <div class="announce">
-                    <p class="title"></p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa beatae omnis rerum molestias
-                        amet quam hic nostrum tempore, illum neque nesciunt laudantium? Minima saepe earum laboriosam
-                        labore
-                        officiis. Laboriosam, sed?</p>
-                </div>
-
             </div>
 
-            <div class="trending">
-                <h2 class="project__title">Trending</h2>
-                <div class="user">
-                    <img src="img/moca.jpg" alt="dog" width="100" height="100">
-                    <div>
+            <div class="cmp-dashboard__main-trending">
+                <h2 class="main-trending__title">Trending</h2>
+
+                <div class="main-trending__container">
+                    <div class="main-trending__container-card">
+                        <!-- TODO cambiar el width y el height -->
+                        <img src="img/moca.jpg" alt="dog" width="100" height="100">
                         <a href="https://en.wikipedia.org/wiki/Catalan_Sheepdog">@Mocca</a>
-                        <h6>the dog proyect</h6>
+                        <p>the dog proyect</p>
                     </div>
-                </div>
-                <div class="user">
-                    <img src="img/aleman.jpg" alt="dog" width="100" height="100">
-                    <div>
-                        <a href="https://en.wikipedia.org/wiki/German_Shepherd">@German</a>
-                        <h6>the dog proyect</h6>
+                    <div class="main-trending__container-card">
+                        <!-- TODO cambiar el width y el height -->
+                        <img src="img/australian.jpg" alt="dog" width="100" height="100">
+                        <a href="https://en.wikipedia.org/wiki/Catalan_Sheepdog">@Mocca</a>
+                        <p>the dog proyect</p>
                     </div>
-                </div>
-                <div class="user">
-                    <img src="img/autralian.jpg" alt="dog" width="100" height="100">
-                    <div>
-                        <a href="https://en.wikipedia.org/wiki/Australian_Shepherd">@Australian</a>
-                        <h6>the dog proyect</h6>
+                    <div class="main-trending__container-card">
+                        <!-- TODO cambiar el width y el height -->
+                        <img src="img/beagle.jpg" alt="dog" width="100" height="100">
+                        <a href="https://en.wikipedia.org/wiki/Catalan_Sheepdog">@Mocca</a>
+                        <p>the dog proyect</p>
                     </div>
-                </div>
-                <div class="user">
-                    <img src="img/beagle.jpg" alt="dog" width="100" height="100">
-                    <div>
-                        <a href="https://en.wikipedia.org/wiki/Beagle">@Beagle</a>
-                        <h6>the dog proyect</h6>
+                    <div class="main-trending__container-card">
+                        <!-- TODO cambiar el width y el height -->
+                        <img src="img/aleman.jpg" alt="dog" width="100" height="100">
+                        <a href="https://en.wikipedia.org/wiki/Catalan_Sheepdog">@Mocca</a>
+                        <p>the dog proyect</p>
                     </div>
+
                 </div>
             </div>
+
         </div>
     </div>
-    </div>
-
-
-
-
-    </div>
-
-    <script>
-        const bttdash = document.querySelector("#dashboard");
-        const sideBarIcons = document.querySelector('.sidebar__icons');
-
-        function changeClass(target){
-            sideBarIcons.classList.toggle("active");
-            
-        }
-
-        bttdash.addEventListener("click", changeClass);
-
-
-    </script>
-
-
-
 </body>
 
 </html>
